@@ -10,6 +10,12 @@ body {
 
 /* General & 'Reset' Stuff */
 
+.downloadContainer {
+    width: 10%;
+    float: left;
+    margin-left: 10px;
+}
+
 .container {
   width: 90%;
   max-width: 600px;
@@ -147,6 +153,7 @@ blockquote {
   color: #aaa;
   padding-left: 10px;
   border-left: 1px dotted #666;
+  border-right: 1px dotted #666;
 }
 
 pre {
