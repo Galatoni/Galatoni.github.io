@@ -1,0 +1,97 @@
+audio {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.message {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    float: left;
+    width: auto;
+    display: inline;
+}
+
+.big {
+    font-size: 1.5em;
+}
+
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    float: left;
+    display: inline;
+
+}
+.card {
+    display: table;
+    min-height: 180px;
+    min-width: 180px;
+
+    position: relative;
+    margin: 30px auto;
+    -webkit-perspective: 700px;
+    -moz-perspective: 700px;
+    left: 60%;float: left;
+    clear:both;
+}
+
+.front {background-color: black;position: relative; z-index: 20; display: table-cell;  }
+
+.back {position: absolute; top:0; left: 0; right:0; bottom: 0; background: red; z-index: 10;}
+
+.card * { max-width: 500px;}
+
+.face {font-size:0;}
+.face *{font-size:16px;}
+
+
+.card:before {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    line-height: 180px;
+    text-align: center;
+    top: 0;
+    left: -180px;
+    color: #222;
+}
+
+.back {
+    z-index: 1;
+}
+.card:hover .face {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+}
+.face {
+
+    -webkit-backface-visibility: visible;
+    -webkit-transition: all 0.5s ease-out;
+    -webkit-transform-origin: 0 0;
+    -moz-backface-visibility: visible;
+    -moz-transition: all 0.5s ease-out;
+    -moz-transform-origin: 0 0;
+}
+.front {
+    -webkit-transform: rotateY(-20deg);
+    -moz-transform: rotateY(-20deg);
+
+}
+.back {
+    background: lightgray;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+}
+.card:hover .front {
+    -webkit-transform: rotateY(-35deg);
+    -moz-transform: rotateY(-35deg);
+}
+.card:active .front{
+    -webkit-transform: rotateY(-165deg);
+    -moz-transform: rotateY(-165deg);
+}
+.card:active .back {
+    -webkit-transform: rotateY(-15deg);
+    -moz-transform: rotateY(-15deg);
+}
