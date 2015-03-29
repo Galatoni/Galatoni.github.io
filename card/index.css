@@ -40,6 +40,12 @@ audio {
 
 .back {position: absolute; top:0; left: 0; right:0; bottom: 0; background: red; z-index: 10;}
 
+.back p {
+    border: 1px solid black;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
 .card * { max-width: 500px;}
 
 .face {font-size:0;}
