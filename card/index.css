@@ -38,7 +38,7 @@ audio {
 
 .front {background-color: black;position: relative; z-index: 20; display: table-cell;  }
 
-.back {position: absolute; top:0; left: 0; right:0; bottom: 0; background: red; z-index: 10;}
+.back {position: absolute; top:0; left: 0; right:0; bottom: 0; background: lavender; z-index: 10;}
 
 .back p {
     border: 1px solid black;
@@ -85,7 +85,7 @@ audio {
 
 }
 .back {
-    background: lightgray;
+    background: lavender;
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
 }
